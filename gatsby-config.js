@@ -17,7 +17,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Andada Pro\:500,600,800`,
+          `Andada Pro\:300,500,600,800`,
           `Playfair Display\:400,500,600`,
           `Oswald\:200,400,500`,
         ],
