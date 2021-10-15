@@ -4,11 +4,11 @@ import styled from "styled-components";
 const Button = styled.button`
   position: relative;
   margin: 10px;
-  width: 11.5rem;
-  height: 3.2rem;
+  width: 13.5rem;
+  height: 3.5rem;
   background: ${(props) => props.background || '#ffce06'};
   border-radius: 5px;
-  font: 500 1.4em 'Andada Pro', sans-serif;
+  font: 600 1.4em 'Andada Pro', sans-serif;
   transition: .3s;
   border: none;
   cursor: pointer;
@@ -20,7 +20,7 @@ const Button = styled.button`
     z-index: 1;
   }
 
-  &:hover ${(props) => props.hover ? '{ margin: 6px; width: 12rem; height: 3.7rem; }' : ''}
+  &:hover ${(props) => props.hover === undefined ? '{ margin: 6px; width: 14rem; height: 4rem; }' : '{}'}
 `;
 
 export default function Btn(props) {
@@ -29,7 +29,7 @@ export default function Btn(props) {
       background={props.background}
       hover={props.hover}
     >
-      <a href="" >{props.children}</a>
+      <a href="">{props.children}</a>
     </Button>
   )
 }

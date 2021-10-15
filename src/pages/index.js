@@ -60,7 +60,6 @@ export const query = graphql`
 
 const IndexPage = ({ data }) => {
   const query = data.alldata.projects[0];
-  console.log(query)
 
   return (
     <Layout
@@ -70,10 +69,12 @@ const IndexPage = ({ data }) => {
       btnEnter={query.btnEnter}
       btnLang={query.btnLang}
     >
-    {/* <Header
+    <Header
       title={query.headerTitle}
       subtitle={query.headerSubtitle}
-    /> */}
+      btnStart={query.btnStart}
+      headerImg={query.headerImg.url}
+    />
     </Layout>
   )
 }

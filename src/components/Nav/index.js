@@ -14,7 +14,7 @@ export default function Nav({
     <S.Container>
       <S.Wrapper>
         <a href="">
-          <S.Logo src={navImg} alt="Logo do Strytegy" />
+          <S.Logo src={navImg} alt="Strytegy Logo" />
         </a>
         <S.Menu>
           <S.Link href="" >{btnBlog}</S.Link>

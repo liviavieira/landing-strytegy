@@ -1,8 +1,8 @@
 import React from "react";
-import styled from "styled-components";
 
 import GlobalStyle from "../GlobalStyles";
 import Nav from "../Nav";
+import Footer from "../Footer";
 
 export default function Layout({
   children,
@@ -23,6 +23,7 @@ export default function Layout({
         btnLang={btnLang}
       />
       {children}
+      {/* <Footer /> */}
     </>
   )
 }
